@@ -49,4 +49,4 @@ while b:
     else:
         print("No image detected. Please! try again")
 
-    time.sleep(300)
+    time.sleep(180)
