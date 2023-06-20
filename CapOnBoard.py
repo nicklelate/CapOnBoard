@@ -1,13 +1,13 @@
 import cv2
 from cv2 import *
-import cvlib as cv
 import datetime
 import time
 import pyrebase
+from firebase import firebase
 # python -m pip install
 
-# url = 'https://cmudigitaltwin-default-rtdb.asia-southeast1.firebasedatabase.app/'
-# messenger = firebase.FirebaseApplication(url)
+url = 'https://timesensor-cbe40-default-rtdb.asia-southeast1.firebasedatabase.app/'
+messenger = firebase.FirebaseApplication(url)
 
 config = {
       "apiKey": "AIzaSyB0jEE81f2tyALy-yu-UIPVhBtZmmVoNM0",
@@ -46,7 +46,10 @@ while b:
         cv2.imwrite("818_room.png", image)
         storage.child("818_room.png").put("818_room.png")
         print("Uploading picture is done")
+        engineer = {'PictureTimestamp':x,'From':'Board'}
+        result = messenger.put('/Time', 'Time',engineer)
+        print("Engineer 1", result)
     else:
         print("No image detected. Please! try again")
 
-    time.sleep(180)
+    time.sleep(300)
