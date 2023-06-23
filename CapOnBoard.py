@@ -10,15 +10,15 @@ url = 'https://timesensor-cbe40-default-rtdb.asia-southeast1.firebasedatabase.ap
 messenger = firebase.FirebaseApplication(url)
 
 config = {
-      "apiKey": "AIzaSyB0jEE81f2tyALy-yu-UIPVhBtZmmVoNM0",
-      "authDomain": "cmudigitaltwin.firebaseapp.com",
-      "databaseURL": "https://cmudigitaltwin-default-rtdb.asia-southeast1.firebasedatabase.app",
-      "projectId": "cmudigitaltwin",
-      "storageBucket": "timesensor-cbe40.appspot.com",
-      "messagingSenderId": "195899095238",
-      "appId": "1:195899095238:web:66d615df634083ca78bfc7",
-      "measurementId": "G-C09PYE5SVR",
-      "serviceAccount":{
+    "apiKey": "AIzaSyDUjAaxdmzaS-Pllrm-W8zfTn_fiQyd39A",
+    "authDomain": "timesensor-cbe40.firebaseapp.com",
+    "databaseURL": "https://timesensor-cbe40-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "projectId": "timesensor-cbe40",
+    "storageBucket": "timesensor-cbe40.appspot.com",
+    "messagingSenderId": "93578226868",
+    "appId": "1:93578226868:web:f7e1af24f5f26a668e3be1",
+    "measurementId": "G-RGM0S2D23H",
+    "serviceAccount":{
         "type": "service_account",
         "project_id": "timesensor-cbe40",
         "private_key_id": "687de6d6b64c721f80a72c1d218b451b8ee7923c",
